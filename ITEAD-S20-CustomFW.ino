@@ -4,7 +4,7 @@
 
 //#define DEBUG // Comment/Uncomment this line to enable/disable debugging output.
 
-#define FW_VERSION "FW: v1712.02"
+#define FW_VERSION "FW: v1.0.0"
 
 #define PIN_RELAY 12
 #define PIN_STATUS 13
