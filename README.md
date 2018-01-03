@@ -56,7 +56,7 @@ At boot the device will send it's firmware version (`FW_VERSION`, below) to the 
 
 ## Examples
 
-Example of generated topics and id's if the device has the ID 1327465.
+Example of generated topics and id's if the device has id: 1327465.
 
 | Parameter | Resulting value | Dedeviceion |
 | --- | --- | --- |
