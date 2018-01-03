@@ -10,8 +10,8 @@ It can be easily ported to other platforms/devices by altering the includes, pin
 
 ## Features
 
-* Turn on or off the relay output by sending a MQTT-message via local MQTT-broker.
-* Toggle the relay using the local button.
+- Turn on or off the relay output by sending a MQTT-message via local MQTT-broker.
+- Toggle the relay using the local button.
 
 ## How it works
 
@@ -71,3 +71,7 @@ Example of item specification in OpenHAB.
 ```
 Switch lmp "Window" <light> (lights) {mqtt=">[MQTTBR01:1327465/cmd:command:ON:default], >[MQTTBR01:1327465/cmd:command:OFF:default], <[MQTTBR01:1327465/opsta:state:default]"}
 ```
+
+## Versioning
+
+This project follows [Semantic Versioning 2.0][https://semver.org/] and uses version numbers like `MAJOR`.`MINOR`.`PATCH`.
