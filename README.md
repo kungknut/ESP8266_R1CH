@@ -1,7 +1,9 @@
 # ITEAD-S20-CustomFW
+
 An Arduino sketch used to control a relay output, communicating both ways via MQTT.
 
 ## What is it
+
 A sketch written for ITEAD S20 Smart Socket, built upon ESP8266, and allows the user to control the device via the local network independent from the manufacturers servers.
 
 It can be easily ported to other platforms/devices by altering the includes, pin-assignment and the chip id determination.
@@ -29,7 +31,7 @@ At boot the device will send it's firmware version (`FW_VERSION`, below) to the 
 
 ## Configuration
 
-### Defines 
+### Defines
 
 | Parameter | Description | Default value |
 | --- | --- | --- |
@@ -53,6 +55,7 @@ At boot the device will send it's firmware version (`FW_VERSION`, below) to the 
 | mqttPassword | Password used to authenticate to the MQTT-broker. | N/A |
 
 ## Examples
+
 Example of generated topics and id's if the device has the ID 1327465.
 
 | Parameter | Resulting value | Dedeviceion |
@@ -62,8 +65,9 @@ Example of generated topics and id's if the device has the ID 1327465.
 | Status topic | 1327465/opsta | Topic where the device will report back it's current state. |
 
 ### OpenHAB
+
 Example of item specification in OpenHAB.
 
-```
+``` .items
 Switch lmp "Window" <light> (lights) {mqtt=">[MQTTBR01:1327465/cmd:command:ON:default], >[MQTTBR01:1327465/cmd:command:OFF:default], <[MQTTBR01:1327465/opsta:state:default]"}
 ```
