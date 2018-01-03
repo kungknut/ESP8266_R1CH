@@ -68,6 +68,6 @@ Example of generated topics and id's if the device has id: 1327465.
 
 Example of item specification in OpenHAB.
 
-``` .items
+```
 Switch lmp "Window" <light> (lights) {mqtt=">[MQTTBR01:1327465/cmd:command:ON:default], >[MQTTBR01:1327465/cmd:command:OFF:default], <[MQTTBR01:1327465/opsta:state:default]"}
 ```
