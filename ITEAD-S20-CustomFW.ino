@@ -36,7 +36,7 @@
 
 //#define DEBUG // Comment/Uncomment this line to enable/disable debugging output.
 
-#define FW_VERSION "FW: development"
+#define FW_VERSION "FW: master"
 
 #define PIN_RELAY 12
 #define PIN_STATUS 13
