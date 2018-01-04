@@ -75,3 +75,7 @@ Switch lmp "Window" <light> (lights) {mqtt=">[MQTTBR01:1327465/cmd:command:ON:de
 ## Versioning
 
 This project follows [Semantic Versioning 2.0](https://semver.org/) and uses version numbers like `MAJOR`.`MINOR`.`PATCH`.
+
+## Contributing
+
+Anyone can contribute to improve or fix, to do so you can either report an issue (a bug, an idea...) or fork the repository, perform modifications to your fork then request a merge.
