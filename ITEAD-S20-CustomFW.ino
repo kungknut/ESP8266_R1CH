@@ -1,3 +1,12 @@
+#
+# This firmware originate from
+# https://github.com/kungknut/ITEAD-S20-CustomFW
+#
+# If you find a bug or want to contribute to make
+# this firmware better? Feel free to open an issue
+# or a pull request.
+#
+
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
 #include <EEPROM.h>
