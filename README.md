@@ -66,10 +66,27 @@ Example of generated topics and id's if the device has id: 1327465.
 
 ### OpenHAB
 
-Example of item specification in OpenHAB.
+Example of item specification in OpenHAB;
 
 ```
 Switch lmp "Window" <light> (lights) {mqtt=">[MQTTBR01:1327465/cmd:command:ON:default], >[MQTTBR01:1327465/cmd:command:OFF:default], <[MQTTBR01:1327465/opsta:state:default]"}
+```
+
+### Domoticz
+
+To use this device together with Domoticz, due to limits in Domoticz MQTT-message output, you will have to use it together with the [MQTT-Translator](https://github.com/kungknut/Domoticz-MQTT-Translator).
+
+Example of User Variable in Domoticz;
+
+```json
+{
+    "MQTT":{
+        "devIdx" : 3,
+        "inTopic" : "1327465/opsta",
+        "outTopic" : "1327465/cmd",
+        "type" : "switch"
+    }
+}
 ```
 
 ## Versioning
