@@ -58,7 +58,7 @@ At boot the device will send it's firmware version (`FW_VERSION`, below) to the 
 
 Example of generated topics and id's if the device has id: 1327465.
 
-| Parameter | Resulting value | Dedeviceion |
+| Parameter | Resulting value | Description |
 | --- | --- | --- |
 | MQTT Client ID | S20ESP1327465 | ID used in communication with MQTT-broker |
 | Command topic | 1327465/cmd | Topic where the device will listen for commands `ON` or `OFF` to set the relay output. |
